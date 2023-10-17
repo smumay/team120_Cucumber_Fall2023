@@ -32,4 +32,9 @@ public class QualitydemyStepdefinitions {
     public void basariliGirisYapilamadiginiTestEder() {
         Assert.assertTrue(qualitydemyPage.emailKutusu.isDisplayed());
     }
+
+    @Then("cookie tiklar")
+    public void cookieTiklar() {
+        qualitydemyPage.cookiesButonu.click();
+    }
 }

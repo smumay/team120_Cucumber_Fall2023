@@ -1,8 +1,10 @@
+
 Feature: US1003 kullanici gecerli bilgilerle sayfaya giris yapar
 
   Scenario: TC05 qualitydemy pozitif login testi
 
     Given kullanici "qdUrl" anasayfaya gider
+    Then cookie tiklar
     Then ilk login linkine tiklar
     And username kutusuna "qdGecerliEmail" yazar
     And password kutusuna "qdGecerliPassword" yazar
