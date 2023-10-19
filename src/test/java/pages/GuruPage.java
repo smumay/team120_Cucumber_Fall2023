@@ -10,10 +10,11 @@ import java.util.List;
 public class GuruPage {
 
     public GuruPage(){
-
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
     @FindBy(xpath = "//tr/th")
     public List<WebElement> basliklarListesi;
+
+
 }

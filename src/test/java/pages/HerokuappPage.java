@@ -11,12 +11,9 @@ public class HerokuappPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-
-    @FindBy(xpath = "//*[text()='Add Element']")
+    @FindBy(xpath = "//*[@onclick='addElement()']")
     public WebElement addElementButonu;
 
-    @FindBy(xpath = "//button[@onclick='deleteElement()']")
+    @FindBy(xpath = "//*[text()='Delete']")
     public WebElement deleteButonu;
-
-
 }

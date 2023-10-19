@@ -1,53 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="33.661" tests="5" skipped="0" failures="0" errors="0">
-<testcase classname="US1006 verilen listedeki urunleri google'da arama" name="TC10 google'da listedeki urunler aratilabilmeli - Example #1.1" time="10.055">
+<testsuite name="Cucumber" time="1.719" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="US1012 Kullanici excele data ekler" name="TC16 Kullanici excel'e data ekleyebilmeli" time="1.462">
 <system-out><![CDATA[
-Given kullanici "googleUrl" anasayfaya gider................................passed
-And cookies kabul eder......................................................passed
-And 2 saniye bekler.........................................................passed
-Then google da "Nutella" icin arama yapar...................................passed
-And google arama sonuclarinin "Nutella" icerdigini test eder................passed
-And sayfayi kapatir.........................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="US1006 verilen listedeki urunleri google'da arama" name="TC10 google'da listedeki urunler aratilabilmeli - Example #1.2" time="5.08">
-<system-out><![CDATA[
-Given kullanici "googleUrl" anasayfaya gider................................passed
-And cookies kabul eder......................................................passed
-And 2 saniye bekler.........................................................passed
-Then google da "Java" icin arama yapar......................................passed
-And google arama sonuclarinin "Java" icerdigini test eder...................passed
-And sayfayi kapatir.........................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="US1006 verilen listedeki urunleri google'da arama" name="TC10 google'da listedeki urunler aratilabilmeli - Example #1.3" time="5.192">
-<system-out><![CDATA[
-Given kullanici "googleUrl" anasayfaya gider................................passed
-And cookies kabul eder......................................................passed
-And 2 saniye bekler.........................................................passed
-Then google da "Apple" icin arama yapar.....................................passed
-And google arama sonuclarinin "Apple" icerdigini test eder..................passed
-And sayfayi kapatir.........................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="US1006 verilen listedeki urunleri google'da arama" name="TC10 google'da listedeki urunler aratilabilmeli - Example #1.4" time="7.588">
-<system-out><![CDATA[
-Given kullanici "googleUrl" anasayfaya gider................................passed
-And cookies kabul eder......................................................passed
-And 2 saniye bekler.........................................................passed
-Then google da "Samsung" icin arama yapar...................................passed
-And google arama sonuclarinin "Samsung" icerdigini test eder................passed
-And sayfayi kapatir.........................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="US1006 verilen listedeki urunleri google'da arama" name="TC10 google'da listedeki urunler aratilabilmeli - Example #1.5" time="5.388">
-<system-out><![CDATA[
-Given kullanici "googleUrl" anasayfaya gider................................passed
-And cookies kabul eder......................................................passed
-And 2 saniye bekler.........................................................passed
-Then google da "Wisequarter" icin arama yapar...............................passed
-And google arama sonuclarinin "Wisequarter" icerdigini test eder............passed
-And sayfayi kapatir.........................................................passed
+Given kullanici ulkeler excelinde Sayfa1'e kadar ayarlari yapar.............passed
+Then 5.sutunu olusturur.....................................................passed
+And baslik satirinda besinci hucreye yeni bir cell olusturur................passed
+And Olusturdugu hucreye "ulke nufusu" yazdirir..............................passed
+Then 2.satir ulke nufusu kolonuna 1500000000 yazdirir.......................passed
+And 8.satir ulke nufusu kolonuna 250000000 yazdirir.........................passed
+And Dosyayi kaydeder........................................................passed
+Then excel'de 2.satirin ulke nufusunun 1500000000 oldugunu test eder........passed
+And excel'de 8.satirin ulke nufusunun 250000000 oldugunu test eder..........passed
+And stream'leri kapatir.....................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

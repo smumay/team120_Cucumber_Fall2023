@@ -6,15 +6,9 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 public class QualitydemyPage {
-
-    QualitydemyPage qualitydemyPage = new QualitydemyPage();
-
     public QualitydemyPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
-
-    @FindBy(xpath = "//a[@onclick='cookieAccept();']")
-    public WebElement cookiesButonu;
 
     @FindBy(linkText = "Log in")
     public WebElement ilkLoginLinki;

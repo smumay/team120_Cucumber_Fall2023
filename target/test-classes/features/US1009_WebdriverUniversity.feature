@@ -2,6 +2,7 @@ Feature: US1009 Webdriver university testi
 
 
 
+  @web
   Scenario: TC13 coklu window testi
 
     Given kullanici "webUniUrl" anasayfaya gider
@@ -14,4 +15,4 @@ Feature: US1009 Webdriver university testi
     And Ok diyerek Popup'i kapatir
     When Ilk sayfaya geri doner
     Then Ilk sayfaya donuldugunu test eder
-    And sayfayi kapatir
+    And sayfalari kapatir

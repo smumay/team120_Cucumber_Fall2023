@@ -11,10 +11,10 @@ public class ZeroAppPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    @FindBy(xpath ="//button[@id='signin_button']")
+    @FindBy(id="signin_button")
     public WebElement ilkSignInButonu;
 
-    @FindBy(xpath = "//input[@id='user_login']")
+    @FindBy(id="user_login")
     public WebElement loginKutusu;
 
     @FindBy(id = "user_password")
@@ -32,6 +32,6 @@ public class ZeroAppPage {
     @FindBy(xpath = "//a[text()='Purchase Foreign Currency']")
     public WebElement purchaseFCurrencyElementi;
 
-    @FindBy(xpath = "//select[@id='pc_currency']")
+    @FindBy(id = "pc_currency")
     public WebElement pcCurrencyDropdown;
 }

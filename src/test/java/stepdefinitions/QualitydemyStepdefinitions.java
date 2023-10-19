@@ -9,6 +9,7 @@ import utilities.ConfigReader;
 public class QualitydemyStepdefinitions {
 
     QualitydemyPage qualitydemyPage = new QualitydemyPage();
+
     @Then("ilk login linkine tiklar")
     public void ilk_login_linkine_tiklar() {
         qualitydemyPage.ilkLoginLinki.click();
@@ -16,6 +17,7 @@ public class QualitydemyStepdefinitions {
     @Then("username kutusuna {string} yazar")
     public void username_kutusuna_yazar(String kullaniciEmail) {
         qualitydemyPage.emailKutusu.sendKeys(ConfigReader.getProperty(kullaniciEmail));
+
     }
     @Then("password kutusuna {string} yazar")
     public void password_kutusuna_yazar(String password) {
@@ -29,18 +31,15 @@ public class QualitydemyStepdefinitions {
     public void basarili_giris_yapildigini_test_eder() {
         Assert.assertTrue(qualitydemyPage.basariliGirisElementi.isDisplayed());
     }
+
     @Then("basarili giris yapilamadigini test eder")
     public void basariliGirisYapilamadiginiTestEder() {
         Assert.assertTrue(qualitydemyPage.emailKutusu.isDisplayed());
     }
 
-    @Then("cookie tiklar")
-    public void cookieTiklar() {
-        qualitydemyPage.cookiesButonu.click();
-    }
-
     @And("username kutusuna examples'dan {string} yazar")
     public void usernameKutusunaExamplesDanYazar(String kullaniciEmail) {
+
         qualitydemyPage.emailKutusu.sendKeys(kullaniciEmail);
     }
 
